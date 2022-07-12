@@ -1,0 +1,67 @@
+@import 'modules/variables';
+@import 'modules/mixin';
+@import 'modules/appear';
+@import 'modules/button';
+@import 'modules/hero-slider';
+@import 'modules/text-animation';
+@import 'modules/image-slide';
+@import 'modules/mobile-menu';
+
+
+@import 'breakpoints/base';
+
+
+@media (min-width: 480px) {
+    @import 'breakpoints/480up';
+}
+
+@media (min-width: 600px) {
+    @import 'breakpoints/600up';
+}
+
+@media (min-width: 960px) {
+    @import 'breakpoints/960up';
+}
+
+@media (min-width: 1280px) {
+    @import 'breakpoints/1280up';
+}
+
+@media (min-resolution: 192dpi), 
+     (-webkit-min-device-pixel-ratio: 2) {
+    @import 'breakpoints/2x';
+}
+
+@media print {
+    @import 'breakpoints/print';
+}
+
+
+
+// @import url('') screen and (max-width: );
+// cssとscssのimport文の書き方は違う
+
+// mobileの差分を追記するのをモバイルファーストという
+// その逆はデスクトップファースト
+// モバイルファーストでcssを書く方が記述量が少なく採用されやすい
+
+// 'screen'は画面表示時という意味
+// @media screen and () {
+    
+// }
+
+// 'print'は印刷時という意味
+// @media print and () {   
+
+// }    
+
+// 'all'は印刷時か画面表示時という意味
+// @media all and () {
+
+// }
+// allは省略可
+
+// @media screen and (max-width: 600px), screen and (min-width: 601px) {
+    
+// }
+// ,は又はの意味
